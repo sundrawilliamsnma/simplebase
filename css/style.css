@@ -19,10 +19,10 @@
     margin: 0 auto;
 }
 /* GRID SYSTEM */
-.row{
+.row {
     background:yellow;
 }
-.column{
+.column {
     background-color: pink;
 }
 
