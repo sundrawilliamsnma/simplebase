@@ -92,14 +92,24 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 /* GRID SYSTEM */
 .row {
-    background: yellow;
+    display: flex;
 }
 
-.column {
+/* FOR DEMO GRID SYSTEM */
+.demo .row {
+    background: yellow;
+    border: 1px solid green;
+}
+
+.demo .column {
     background: pink;
+    border: 1px soild red;
+}
+
+.demo p {
+    margin: 0;
 }
 
 
