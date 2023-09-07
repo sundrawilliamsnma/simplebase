@@ -1,0 +1,55 @@
+:root {
+
+    /* BASE COLORS */
+    --color-body-background: rgb(255 255 255 / 1);
+    --color-body-text: rgb(0 0 0 / .8);
+    --color-headings: rgb(0 0 0 / 1);
+    --color-links: rgb(51 102 204 / 1);
+    --color-links-dark: rgb(0 51 153 / 1);
+    --color-accent-color: rgb(102, 204, 124);
+
+    /* BASE TYPOGRAPHY */
+    --font-body: Helvetica, Arial, sans-serif;
+    --font-headings: Georgia, sans-serif;
+
+}
+
+/* SET GLOBAL COLORS */
+body {
+    background: var(--color-body-background);
+    color: var(--color-body-text);
+}
+h1, h2, h3 {
+    color: var(--color-headings);
+}
+a {
+    color: var(--color-links);
+}
+a:hover {
+    color: var(--color-links-dark);
+}
+
+/* SET GLOBAL TYPOGRAPHY */
+body {
+    font-family: var(--font-body);
+    line-height: 1.5;
+}
+h1, h2, h3 {
+    font-family: var(--font-headings);
+}
+p {
+    max-width: 60ch;
+}
+
+/* BESPOKE TYPE BLOCK: HEADLINE AND SUB HEADLINE */
+.headline {
+    font-size: 4rem;
+    color: var(--color-accent-color);
+    margin: 1rem 0;
+    line-height: 1;
+}
+.subheadline {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 1rem 0;
+}
