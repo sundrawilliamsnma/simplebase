@@ -13,6 +13,18 @@
     --font-headings: Georgia, sans-serif;
 
 }
+/* CONTAINER */
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/* GRID SYSTEM */
+.row{
+    background:yellow;
+}
+.column{
+    background-color: pink;
+}
 
 /* SET GLOBAL COLORS */
 body {
