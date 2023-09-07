@@ -42,14 +42,20 @@ p {
 }
 /* Media Queries w/ responsive typography */
 
-body { background: yellow;}
+body { 
+    font-size: 87.5%;
+}
 
 @media (min-width:768px) {
-    body {background: pink}
+    body {
+        font-size: 100%;
+    }
 }
 
 @media (min-width:1250px) {
-    body {background: teal}
+    body {
+        font-size: 112.5%;
+    }
 }
 
 /* BESPOKE TYPE BLOCK: HEADLINE AND SUB HEADLINE */
