@@ -40,6 +40,17 @@ h1, h2, h3 {
 p {
     max-width: 60ch;
 }
+/* Media Queries w/ responsive typography */
+
+body { background: yellow;}
+
+@media (min-width:768px) {
+    body {background: pink}
+}
+
+@media (min-width:1250px) {
+    body {background: teal}
+}
 
 /* BESPOKE TYPE BLOCK: HEADLINE AND SUB HEADLINE */
 .headline {
