@@ -94,22 +94,27 @@ body {
 }
 /* GRID SYSTEM */
 .row {
-    display: flex;
+    --gridgap: 2em;
+    gap: var(--gridgrap);
 }
+
+.one-half {}
+.one-third {}
+.one-fourth
 
 /* FOR DEMO GRID SYSTEM */
 .demo .row {
-    background: yellow;
-    border: 1px solid green;
-}
+    margin-bottom: var(--gridgap);
 
-.demo .column {
-    background: pink;
-    border: 1px soild red;
+.demo .row * {
+    background: rgb(0 0 0 / .1);
+    padding: 1em;
+    text-align: center;
 }
 
 .demo p {
     margin: 0;
+    max-width: none;
 }
 
 
