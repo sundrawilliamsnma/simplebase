@@ -100,10 +100,16 @@ body {
     gap: var(--gridgrap);
 }
 
-.one-whole {grid-column: spand 12;}
-.one-half { grid-column: span 6;}
-.one-third { grid-column: span 4;}
-.one-fourth{ grid-column: span 3;}
+.one-whole {grid-column: span 12 / span 12;}
+.one-half { grid-column: span 6 / span 6;}
+.one-third { grid-column: span 4 / span 4;}
+.one-thirds { grid-column: span 8 / span 8;}
+.one-fourth{ grid-column: span 3 / span 3;}
+.one-fourths { grid-column: span 9 / span 9;}
+
+.one-half.centered { grid-column-start: 4;}
+.one-third.centered { grid-column-start: 5;}
+.one-thirds.centered { grid-column-start: 3;}
 
 /* FOR DEMO GRID SYSTEM */
 .demo .row {
