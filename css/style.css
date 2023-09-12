@@ -95,16 +95,20 @@ body {
 /* GRID SYSTEM */
 .row {
     --gridgap: 2em;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     gap: var(--gridgrap);
 }
 
-.one-half {}
-.one-third {}
-.one-fourth
+.one-whole {grid-column: spand 12;}
+.one-half { grid-column: span 6;}
+.one-third { grid-column: span 4;}
+.one-fourth{ grid-column: span 3;}
 
 /* FOR DEMO GRID SYSTEM */
 .demo .row {
     margin-bottom: var(--gridgap);
+}    
 
 .demo .row * {
     background: rgb(0 0 0 / .1);
