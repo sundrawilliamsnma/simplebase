@@ -36,6 +36,7 @@ CSS TABLE OF CONTENTS
     --font-body: Helvetica, Arial, sans-serif;
     --font-headings: Georgia, sans-serif;
 
+
 }
 
 /* GLOBAL RESETS */
@@ -92,40 +93,44 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 /* GRID SYSTEM */
 .row {
     --gridgap: 2em;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: var(--gridgrap);
+}
+@media (min-width: 768px) {
+    .row {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: var(--gridgap);
+    }
+
+    .one-whole { grid-column: span 12 / span 12; }
+    .one-half { grid-column: span 6 / span 6; }
+    .one-third { grid-column: span 4 / span 4; }
+    .two-thirds { grid-column: span 8 / span 8; }
+    .one-fourth { grid-column: span 3 / span 3; }
+    .three-fourths { grid-column: span 9 / span 9; }
+
+    .one-half.centered { grid-column-start: 4; }
+    .one-third.centered { grid-column-start: 5; }
+    .two-thirds.centered { grid-column-start: 3; }
 }
 
-.one-whole {grid-column: span 12 / span 12;}
-.one-half { grid-column: span 6 / span 6;}
-.one-third { grid-column: span 4 / span 4;}
-.one-thirds { grid-column: span 8 / span 8;}
-.one-fourth{ grid-column: span 3 / span 3;}
-.one-fourths { grid-column: span 9 / span 9;}
-
-.one-half.centered { grid-column-start: 4;}
-.one-third.centered { grid-column-start: 5;}
-.one-thirds.centered { grid-column-start: 3;}
-
-/* FOR DEMO GRID SYSTEM */
-.demo .row {
-    margin-bottom: var(--gridgap);
-}    
-
-.demo .row * {
+/* FOR DEMO GRID ONLY */
+.demo .row > * {
     background: rgb(0 0 0 / .1);
     padding: 1em;
     text-align: center;
+    margin-bottom: var(--gridgap);
 }
 
 .demo p {
     margin: 0;
     max-width: none;
 }
+
+
 
 
 /* ----------------------------- */
