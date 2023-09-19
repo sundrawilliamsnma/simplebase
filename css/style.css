@@ -11,13 +11,42 @@ CSS TABLE OF CONTENTS
 # LAYOUT
     # MEDIA QUERIES (w/ RESPONSIVE TYPOGRAPHY)
     # CONTAINER
-    # GRID
+    # GRID (ROWS AND COLUMNS)
+
+# PAGE STRUCTURE (BASE TEMPLATE)
+    # HEADER
+        # SITE LOGO
+        # SITE NAV
+    # MAIN
+        # SECTIONS
+    # FOOTER
+    
 
 # CUSTOM STYLING
     # CUSTOM TYPE BLOCK/SPECIMEN
 
 */
 
+/* ----------------------------- */
+/* ----- PAGE STRUCTURE -------- */
+/* ----------------------------- */
+.site-header {
+    background-color: pink ;
+    padding: 1em;
+}
+.site-header .site-logo {
+    display: flex ;
+    gap: 1em;
+}
+.site-header img {
+    display: block ;
+}
+.site-main {
+    background-color: yellow ;
+}
+.site-footer {
+    background-color: grey ;
+}
 /* ----------------------------- */
 /* ----- GLOBAL STYLING -------- */
 /* ----------------------------- */
