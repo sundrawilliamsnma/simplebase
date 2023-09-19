@@ -105,6 +105,14 @@ body {
         gap: var(--gridgap);
     }
 
+    .row.vertical-center {
+        align-items: center;
+    }
+
+    .row.vertical-centered {
+        align-items
+    }
+
     .one-whole { grid-column: span 12 / span 12; }
     .one-half { grid-column: span 6 / span 6; }
     .one-third { grid-column: span 4 / span 4; }
@@ -115,7 +123,7 @@ body {
     .one-half.centered { grid-column-start: 4; }
     .one-third.centered { grid-column-start: 5; }
     .two-thirds.centered { grid-column-start: 3; }
-}
+
 
 /* FOR DEMO GRID ONLY */
 .demo .row > * {
