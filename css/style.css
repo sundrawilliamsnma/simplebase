@@ -117,7 +117,8 @@ img {
 /* GRID SYSTEM */
 .row {
     --gridgap: 2em;
-    margin-bottom: 4em;
+    padding-bottom: 2em;
+    padding-top: 2em;
 }
 @media (min-width: 768px) {
     .row {
