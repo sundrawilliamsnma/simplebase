@@ -42,8 +42,12 @@ CSS TABLE OF CONTENTS
     --color-links: rgb(51 102 204 / 1);
     --color-links-dark: rgb(0 51 153 / 1);
     --color-accent-color: rgb(102, 204, 124);
-    --color-header-bg: rgb(0 0 0 / .1);
-    --color-footer-bg: rgb(0 0 0 / .2);
+    --color-header-bg: rgb(105, 0, 102);
+    --color-header-links: rgb(255, 255, 255);
+    --color-hero-bg: rgb(234, 149, 231);
+    --color-footer-bg: rgb(0 0 0 / 1);
+    --color-footer-text: rgb(255, 255, 255);
+    --color-footer-links: rgb(227, 162, 238);
 
 
     /* BASE TYPOGRAPHY */
@@ -68,6 +72,7 @@ body {
 h1, h2, h3 {
     color: var(--color-headings);
 }
+
 a {
     color: var(--color-links);
 }
@@ -83,6 +88,22 @@ body {
 h1, h2, h3 {
     font-family: var(--font-headings);
 }
+
+h1 {
+    font-size: 2.25em;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 1.875em;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.3;
+}
+
 p {
     max-width: 60ch;
 }
@@ -117,8 +138,8 @@ img {
 /* GRID SYSTEM */
 .row {
     --gridgap: 2em;
-    padding-bottom: 2em;
     padding-top: 2em;
+    padding-bottom: 2em;
 }
 @media (min-width: 768px) {
     .row {
@@ -148,12 +169,13 @@ img {
 
 .one-half.centered { grid-column-start: 4; }
 .one-third.centered { grid-column-start: 5; }
-.two-third.centered { grid-column-start: 3; }
+.two-thirds.centered { grid-column-start: 3; }
 }
 
 /* DEMO GRID ONLY */
 .demo .row {
     margin-bottom: 0;
+    padding: 0;
 }
 
 .demo .row > * {
@@ -182,6 +204,7 @@ img {
 
 .site-header .site-logo {
     display: flex;
+    align-items: center;
     gap: 1em;
 }
 
@@ -196,6 +219,7 @@ img {
 
 .site-header a {
     text-decoration: none;
+    color: var(--color-header-links);
 }
 
 .site-header .site-nav ul {
@@ -209,22 +233,44 @@ img {
     padding: 1em;
 }
 
+/* SITE MAIN */
 .site-main {
-    background-color: pink;
 }
 
+/* ALL SECTION */
+section {
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+/* HERO SECTION */
+.hero {
+    background-color: var(--color-hero-bg);
+}
+
+/* SITE FOOTER */
 .site-footer {
     background-color: var(--color-footer-bg);
-    padding: 3em 0;
+    color: var(--color-footer-text);
+    padding: 5em 0;
 }
+
+.site-footer h1,
+.site-footer h2,
+.site-footer h3 {
+    color: var(--color-footer-text);
+}
+
 
 .site-footer .site-nav ul {
     list-style: none;
-    margin-top: 4em;
+    margin: 0;
+    padding: 0;
 }
 
 .site-footer a {
     text-decoration: none;
+    color: var(--color-footer-links);
 }
 
 
